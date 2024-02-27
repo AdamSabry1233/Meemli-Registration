@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->isHTML(true);
             //$mail->Subject = 'Confirmation for Meemli Summer Programs';
             $mail->Body = "
-                <h1>Halemah YOU ARE NOW EXPELLED FROM SJSU!</h1>
+                <h1>Thank You for signing up for Meemli Summer Programs!</h1>
                 <p><strong>Selected Programs:</strong> $programs</p>
                 <p>We will contact you with more details before enrolling your child.</p>
                 <p>Thank you for your interest!</p>
