@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // SMTP username and password (using API key)
             $mail->Username = 'Replace with username';  // Replace with your SMTP key name
-            $mail->Password = 'Replace with password';
+            $mail->Password = 'Replace with env file';
 
             // Content
             $mail->isHTML(true);
