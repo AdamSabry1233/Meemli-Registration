@@ -54,8 +54,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->addAddress($parentEmail);
 
             // SMTP username and password (using API key)
-            $mail->Username = 'simba.the.warrior@gmail.com';  // Replace with your SMTP key name
-            $mail->Password = 'xjyu rnqy liox pnpe';
+            $mail->Username = 'Replace with username';  // Replace with your SMTP key name
+            $mail->Password = 'Replace with password';
 
             // Content
             $mail->isHTML(true);
