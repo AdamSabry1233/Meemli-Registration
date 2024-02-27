@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    text-align: center;
+    background-color: #cecece;
+}
+
+h1 {
+    color: #009688;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #009688;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #00796b;
+}
+
+/* Style for checkboxes */
+input[type="checkbox"] {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* Style for textarea */
+textarea {
+    resize: vertical;
+}
+
+/* Additional styling for the form messages (if needed) */
+.success-message {
+    color: #4CAF50;
+    margin-top: 10px;
+}
+
+.error-message {
+    color: #f44336;
+    margin-top: 10px;
+}

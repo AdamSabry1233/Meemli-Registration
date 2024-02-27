@@ -1,0 +1,63 @@
+# Ignore system and editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+*.suo
+*.user
+*.userosscache
+*.suo
+*.cache
+*.log
+*.diff
+*.pid
+*.seed
+*.suo
+*.swp
+*.DS_Store
+Thumbs.db
+
+# Ignore Node.js related files and folders
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore environment configuration files
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+.env.local
+
+# Ignore build and output directories
+/build/
+/dist/
+
+# Ignore dependency directories
+/bower_components/
+/vendor/
+
+# Ignore local development files
+*.log
+*.sqlite
+*.log*
+*.sqlite*
+*.db
+*.sqlite3
+*.db3
+
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

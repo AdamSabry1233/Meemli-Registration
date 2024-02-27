@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meemli Summer 2023 Waitlist Signup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Summer 2024 Online Programs Waitlist Signup</h1>
+    <p>Please select your choices for Meemli Summer Online Programs 2024 for middle school students and submit this form.</p>
+    <p>We will add you to our waitlist and will contact you with more details before enrolling your child in the selected programs.</p>
+    <p>The programs will be offered in July 2024, and your child can join them from anywhere with a computer and Internet access.</p>
+    <p>The program is free, but please make sure your child can commit to attending the program as space is limited, and there will be other students who are eager to attend.</p>
+    <p>Thanks for your interest!</p>
+    <p>Note: We request you provide your phone number so we can call or text you regarding the programs. By calling or texting Meemli at 888-248-9904, you agree to receive messages. If you no longer wish to receive text messages, you may opt out at any time by replying “STOP”.</p>
+
+    <form id="signupForm" action="processForm.php" method="post">
+        <!-- Parent Information -->
+        <label for="parentEmail">Parent’s email address *</label>
+        <input type="email" id="parentEmail" name="parentEmail" required>
+
+        <label for="reenterParentEmail">Re-enter Parent’s email *</label>
+        <input type="email" id="reenterParentEmail" name="reenterParentEmail" required>
+
+        <label for="parentName">Parent’s name *</label>
+        <input type="text" id="parentName" name="parentName" required>
+
+        <label for="phoneNumber">Contact Phone Number-Format: (8583568494) *</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+        <!-- Child Information -->
+        <label for="childName">Child’s name *</label>
+        <input type="text" id="childName" name="childName" required>
+
+        <label for="childGrade">Child’s grade *</label>
+        <input type="text" id="childGrade" name="childGrade" required>
+
+        <label for="childSchool">Child’s school *</label>
+        <input type="text" id="childSchool" name="childSchool" required>
+
+        <!-- Location Information -->
+        <label for="city">City *</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="state">State *</label>
+        <select id="state" name="state" required>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+        </select>
+        
+
+        <!-- Select all programs your child would like to join -->
+<fieldset id="programsFieldset">
+    <legend>Select all programs your child would like to join *</legend>
+
+    <label for="summerBookClub">Summer Book Club Fun</label>
+    <input type="checkbox" id="summerBookClub" name="programs" value="Summer Book Club Fun">
+
+    <label for="handsOnScience">Hands-on Science</label>
+    <input type="checkbox" id="handsOnScience" name="programs" value="Hands-on Science">
+
+    <label for="mathWorkshops">Math Workshops</label>
+    <input type="checkbox" id="mathWorkshops" name="programs" value="Math Workshops">
+
+    <label for="introToComputing">Intro to Computing and Careers</label>
+    <input type="checkbox" id="introToComputing" name="programs" value="Intro to Computing and Careers">
+
+    <label for="effectiveReadingStrategies">Effective Reading Strategies</label>
+    <input type="checkbox" id="effectiveReadingStrategies" name="programs" value="Effective Reading Strategies">
+
+    <label for="artsAndCrafts">Arts & Crafts</label>
+    <input type="checkbox" id="artsAndCrafts" name="programs" value="Arts & Crafts">
+</fieldset>
+
+<!-- Time Preference -->
+<fieldset id="timePreferenceFieldset">
+    <legend>Please enter whether you prefer Mornings or Afternoons or both *</legend>
+
+    <label for="mornings">Mornings</label>
+    <input type="checkbox" id="mornings" name="timePreference" value="Mornings">
+
+    <label for="afternoons">Afternoons</label>
+    <input type="checkbox" id="afternoons" name="timePreference" value="Afternoons">
+</fieldset>
+
+<input type="hidden" id="validationStatus" name="validationStatus">
+
+<!-- Add an event listener to check the validation on form submission -->
+<script>
+    document.getElementById('signupForm').addEventListener('submit', function (event) {
+        const programsCheckboxes = document.querySelectorAll('input[name="programs"]');
+        const timePreferenceCheckboxes = document.querySelectorAll('input[name="timePreference"]');
+        const validationStatusInput = document.getElementById('validationStatus');
+        
+        // Check if at least one program checkbox is checked
+        const isAtLeastOneProgramChecked = [...programsCheckboxes].some(checkbox => checkbox.checked);
+
+        // Check if at least one time preference checkbox is checked
+        const isAtLeastOneTimePreferenceChecked = [...timePreferenceCheckboxes].some(checkbox => checkbox.checked);
+
+        // Set the value of the hidden input based on the validation result
+        validationStatusInput.value = (isAtLeastOneProgramChecked && isAtLeastOneTimePreferenceChecked) ? 'valid' : 'invalid';
+
+        // If any validation fails, prevent form submission
+        if (!(isAtLeastOneProgramChecked && isAtLeastOneTimePreferenceChecked)) {
+            alert('Please select at least one program and one time preference.');
+            event.preventDefault();
+        }
+    });
+</script>
+
+        
+
+        <!-- Additional Details -->
+        <label for="additionalDetails">Additional details/comments/questions/requests</label>
+        <textarea id="additionalDetails" name="additionalDetails" rows="4"></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+    <script src="formValidation.js"></script>
+</body>
+</html>
