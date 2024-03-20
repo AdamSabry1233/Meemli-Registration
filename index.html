@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meemli Summer 2024 Waitlist Signup</title>
+    <title>Meemli Summer 2023 Waitlist Signup</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Summer 2024 Online Programs Waitlist Signup</h1>
-    <p>Please select your choices for Meemli Summer Online Programs 2024 for middle school students and submit this form.</p>
+    <p>Please select your choices for <strong>Meemli Summer Online Programs 2024</strong> for middle school students and submit this form.</p>
     <p>We will add you to our waitlist and will contact you with more details before enrolling your child in the selected programs.</p>
-    <p>The programs will be offered in July 2024, and your child can join them from anywhere with a computer and Internet access.</p>
+    <p>The programs will be offered in <strong> July 2024</strong>, and your child can join them from anywhere with a computer and Internet access.</p>
     <p>The program is free, but please make sure your child can commit to attending the program as space is limited, and there will be other students who are eager to attend.</p>
     <p>Thanks for your interest!</p>
-    <p>Note: We request you provide your phone number so we can call or text you regarding the programs. By calling or texting Meemli at 888-248-9904, you agree to receive messages. If you no longer wish to receive text messages, you may opt out at any time by replying “STOP”.</p>
+    <p><strong>Note: We request you provide your phone number so we can call or text you regarding the programs. By calling or texting Meemli at 888-248-9904, you agree to receive messages. If you no longer wish to receive text messages, you may opt out at any time by replying “STOP”.</strong></p>
+
 
     <form id="signupForm" action="processForm.php" method="post">
         <!-- Parent Information -->
@@ -99,31 +100,63 @@
         
 
         <!-- Select all programs your child would like to join -->
+        <p><strong>General Info: All classes will be taught online, using Zoom and the Meemli learning platform, and are intended for students entering grades 5-8 or equivalent.</strong></p>
 <fieldset id="programsFieldset">
-    <legend>Select all programs your child would like to join *</legend>
+    <legend><strong>Select all the programs your child would like to join, click the program details button for further information on each program *</strong></legend>
+            
 
-    <label for="summerBookClub">Summer Book Club Fun</label>
-    <input type="checkbox" id="summerBookClub" name="programs" value="Summer Book Club Fun">
+            <label for="summerBookClub">Summer Book Club Fun</label>
+            <input type="checkbox" id="summerBookClub" name="programs" value="Summer Book Club Fun">
+            <button type="button" class="programDetailsBtn" onclick="showProgramDetails('summerBookClub')">Details</button>
+            <div id="summerBookClubDescription" class="programDescription" style="display: none;">
+                <h3>Summer Book Club Fun</h3>
+                <p>This program helps students enjoy reading while advancing critical reading skills. Each student will select a grade/age appropriate book from our list and will read specific chapters and discuss it each week with a mentor, using educator-developed guides. The books will be provided if needed.</p>
+            </div>
 
-    <label for="handsOnScience">Hands-on Science</label>
-    <input type="checkbox" id="handsOnScience" name="programs" value="Hands-on Science">
+            <label for="handsOnScience">Hands-on Science</label>
+            <input type="checkbox" id="handsOnScience" name="programs" value="Hands-on Science">
+            <button type="button" class="programDetailsBtn" onclick="showProgramDetails('handsOnScience')">Details</button>
+            <div id="handsOnScienceDescription" class="programDescription" style="display: none;">
+                <h3>Hands-on Science</h3>
+                <p>Each student will work on hands-on, doing science experiments with the materials provided, guided by a teacher online. The goal is to increase interest and knowledge in science while enjoying doing the experiments at home. Each student will receive a science experiment kit shipped to their home.</p>
+            </div>
 
-    <label for="mathWorkshops">Math Workshops</label>
-    <input type="checkbox" id="mathWorkshops" name="programs" value="Math Workshops">
+            <label for="mathWorkshops">Math Workshops</label>
+            <input type="checkbox" id="mathWorkshops" name="programs" value="Math Workshops">
+            <button type="button" class="programDetailsBtn" onclick="showProgramDetails('mathWorkshops')">Details</button>
+            <div id="mathWorkshopsDescription" class="programDescription" style="display: none;">
+                <h3>Math Workshops</h3>
+                <p>Students will learn proven modeling techniques to better understand and solve word problems, particularly those involving fractions, ratios and proportions. Each student will work a high-school student-mentor who is strong in math, familiar with the challenges of word problems and trained to help.</p>
+            </div>
 
-    <label for="introToComputing">Intro to Computing and Careers</label>
-    <input type="checkbox" id="introToComputing" name="programs" value="Intro to Computing and Careers">
+            <label for="introToComputing">Intro to Computing and Careers</label>
+            <input type="checkbox" id="introToComputing" name="programs" value="Intro to Computing and Careers">
+            <button type="button" class="programDetailsBtn" onclick="showProgramDetails('introToComputing')">Details</button>
+            <div id="introToComputingDescription" class="programDescription" style="display: none;">
+                <h3>Intro to Computing and Careers</h3>
+                <p>This program is for students who know how to use a computer but don’t know much about the details, and they will get a small taste of coding too. They will interact 1-1 with a trained, trusted mentor who will share their experiences to open a window to the world of professional careers.</p>
+            </div>
 
-    <label for="effectiveReadingStrategies">Effective Reading Strategies</label>
-    <input type="checkbox" id="effectiveReadingStrategies" name="programs" value="Effective Reading Strategies">
+            <label for="effectiveReadingStrategies">Effective Reading Strategies</label>
+            <input type="checkbox" id="effectiveReadingStrategies" name="programs" value="Effective Reading Strategies">
+            <button type="button" class="programDetailsBtn" onclick="showProgramDetails('effectiveReadingStrategies')">Details</button>
+            <div id="effectiveReadingStrategiesDescription" class="programDescription" style="display: none;">
+                <h3>Effective Reading Strategies</h3>
+                <p>This program helps students learn and practice strategies to improve their ability to read diverse texts and understand the content.</p>
+            </div>
 
-    <label for="artsAndCrafts">Arts & Crafts</label>
-    <input type="checkbox" id="artsAndCrafts" name="programs" value="Arts & Crafts">
+            <label for="artsAndCrafts">Arts & Crafts</label>
+            <input type="checkbox" id="artsAndCrafts" name="programs" value="Arts & Crafts">
+            <button type="button" class="programDetailsBtn" onclick="showProgramDetails('artsAndCrafts')">Details</button>
+            <div id="artsAndCraftsDescription" class="programDescription" style="display: none;">
+                <h3>Arts & Crafts</h3>
+                <p>Student will be guided by an art teacher and learning techniques and creating their own art work. The necessary materials will be sent to each student so they can fully participate in and enjoy this program that boosts learning skills.</p>
+            </div>
 </fieldset>
 
 <!-- Time Preference -->
 <fieldset id="timePreferenceFieldset">
-    <legend>Please enter whether you prefer Mornings or Afternoons or both *</legend>
+    <legend><strong>Please enter whether you prefer Mornings or Afternoons or both *</strong></legend>
 
     <label for="mornings">Mornings</label>
     <input type="checkbox" id="mornings" name="timePreference" value="Mornings">
@@ -134,7 +167,19 @@
 
 <input type="hidden" id="validationStatus" name="validationStatus">
 
+
+
 <!-- Add an event listener to check the validation on form submission -->
+<script>
+    function showProgramDetails(programId) {
+            const programDescription = document.getElementById(programId + 'Description');
+            if (programDescription.style.display === 'none') {
+                programDescription.style.display = 'block';
+            } else {
+                programDescription.style.display = 'none';
+            }
+        }
+</script>
 <script>
     document.getElementById('signupForm').addEventListener('submit', function (event) {
         const programsCheckboxes = document.querySelectorAll('input[name="programs"]');

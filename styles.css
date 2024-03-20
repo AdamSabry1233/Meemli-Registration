@@ -2,17 +2,17 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 20px;
     text-align: center;
-    background-color: #cecece;
+    background-color: #fceaeae9;
 }
 
 h1 {
-    color: #009688;
+    color: #056237;
 }
 
 form {
     max-width: 600px;
     margin: auto;
-    background-color: #fff;
+    background-color: #f15f3a;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -35,7 +35,7 @@ input, select, textarea {
 }
 
 button {
-    background-color: #009688;
+    background-color: #04575f;
     color: #fff;
     padding: 12px 20px;
     border: none;
@@ -45,7 +45,7 @@ button {
 }
 
 button:hover {
-    background-color: #00796b;
+    background-color: #d9ef4a;
 }
 
 /* Style for checkboxes */
